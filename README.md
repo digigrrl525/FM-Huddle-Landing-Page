@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/css-html-flexbox-RrIpKzuZPI](https://www.frontendmentor.io/solutions/css-html-flexbox-RrIpKzuZPI)
 - Live Site URL: [https://digigrrl525.github.io/FM-Huddle-Landing-Page/](https://digigrrl525.github.io/FM-Huddle-Landing-Page/)
 
 ## My process
