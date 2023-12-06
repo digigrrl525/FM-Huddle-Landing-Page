@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--violet);
+    background-image: url("../images/bg-desktop.svg");
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-origin: inherit;
+}
+
+header {
+    margin: 48px 8%;
+}
+
+main {
+    display: flex;
+    width: 83%;
+    margin: 74px auto;
+    color: white;
+}
+
+#main-image {
+    position: relative;
+    top: 24px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.text-group {
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    padding: 16px;
+    width: 50%;
+    color: var(--violet);
+    font-size: 18px ;
+    box-shadow: 4px 4px 5px 0px rgba(8,1,1,0.25);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(8,1,1,0.25);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(8,1,1,0.25);
+}
+
+button:hover {
+    background-color: var(--magenta);
+    color: white;
+    cursor: pointer;
+}
+
+.socials {
+    position: relative;
+    top: 30%;
+    float: right;
+    margin: 60px 0;
+}
+
+.socials>svg {
+    margin: 0 8px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 8px 12px;
+    fill: white;
+}
+
+.socials>svg:nth-child(2) {
+    padding: 8px 8px;
+}
+
+.socials>svg:nth-child(3) {
+    padding: 8px 10px;
+}
+
+.socials>svg:hover {
+    fill: var(--magenta);
+    border: 1px solid var(--magenta);
+    cursor: pointer;
+}
+
+/* Footer */
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    color: white;
+}
+
+.attribution a { 
+    color: var(--magenta); 
+}
+
+@media (max-width: 1140px) and (min-width: 376px) {
+    body {
+        margin: 70px 124px;
+    }
+
+    main {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 100%;
+        background-image: url("../images/bg-mobile.svg");
+        margin: 0 auto;
+        clear: both;
+    }
+
+    header {
+        margin: 24px 9%;
+    }
+
+    main {
+        display: block;
+        position: relative;
+        top: -60px;
+        width: 300px;
+        text-align: center;
+    }
+
+    #main-image {
+        width: 304.5px;
+        height: auto;
+    }
+
+    .socials {
+        float: none;
+    }
+
+    button {
+        width: 75%;
+    }
+
+    .text-group {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        clear: both;
+        position: relative;
+        left: -10px;
+    }
+}
